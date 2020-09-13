@@ -22,28 +22,30 @@ header {
                 flex: 1;
                 list-style: none;
                 text-align: center;
-                // height: 50px;
                 padding: 16px;
                 
-                
+                a {
+                    color: darken($foreground-color, 30);
+                    text-decoration: none;
+
+                    &:hover {
+                        color: $foreground-color;
+                    }
+                }
             }
         }
     }
 }
 
-main {
+.wrapper {
     background-color: #333;
-}
 
-.home--banner {
-    background-image: url('../assets/img/black-phanter.png');
-    background-repeat: no-repeat;
-    background-position-y: center;
-    background-size: cover;
-    height: 620px;
-    opacity: 30%;
-}
-
-.menu {
-    // background: $menu-color;
+    .initial-presentation {
+        background-image: url('../assets/img/black-phanter.png');
+        background-repeat: no-repeat;
+        background-position-y: center;
+        background-size: cover;
+        height: 620px;
+        opacity: 30%;
+    }
 }
