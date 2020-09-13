@@ -3,8 +3,37 @@ body {
   margin: 0;
 }
 
-.menu {
-  background: #111111;
+header {
+  background-color: #111111;
+  color: #FFF;
+  height: 50px;
+  width: 100%;
+}
+header nav {
+  height: 100%;
+  width: 720px;
+  margin: 0 auto;
+}
+header nav ul {
+  display: flex;
+}
+header nav ul li {
+  flex: 1;
+  list-style: none;
+  text-align: center;
+  padding: 16px;
+}
+
+main {
+  background-color: #333;
+}
+main .presentation {
+  background-image: url("../assets/img/black-phanter.png");
+  background-repeat: no-repeat;
+  background-position-y: center;
+  background-size: cover;
+  height: 620px;
+  opacity: 30%;
 }
 
 /*# sourceMappingURL=style.css.map */
