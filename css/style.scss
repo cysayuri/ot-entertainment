@@ -1,4 +1,15 @@
+$menu-color: #111111;
+$primary-color: #E8B02C;
+
 body {
     padding: 0;
     margin: 0;
+}
+
+header {
+    
+}
+
+.menu {
+    background: $menu-color;
 }
