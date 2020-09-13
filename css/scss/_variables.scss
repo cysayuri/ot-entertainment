@@ -1,0 +1,26 @@
+// Fonts
+$font-regular: 'Roboto Mono Regular', 'Open Sans Regular', 'sans-serif';
+$font-medium: 'Roboto Mono Medium', 'Open Sans Semibold', 'sans-serif';
+$font-semibold: 'Roboto Mono Semibold', 'Open Sans Semibold', 'sans-serif';
+$font-bold: 'Roboto Mono Bold', 'Open Sans Bold', 'sans-serif';
+$font-light: 'Roboto Mono Light', 'Open Sans Light', 'sans-serif';
+$font-thin: 'Roboto Mono Thin', 'Open Sans Light', 'sans-serif';
+
+// Colors
+$dark-color: #111111;
+$foreground-color: #f5f5f5;
+$primary-color: #E8B02C;
+
+// Media Query
+@mixin MQ($size) {
+    @media screen and (max-width: $size) {
+        @content;
+    }
+}
+
+// Sizes
+$XS: 480px;
+$S: 758px;
+$M: 960px;
+$L: 1024px;
+$XL: 1130px;

@@ -1,83 +1,52 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;300;400;500;600;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
+
 @font-face {
   font-family: 'Roboto Mono Regular';
   src: url(../assets/fonts/RobotoMono-Regular.ttf);
 }
+
 @font-face {
   font-family: 'Roboto Mono Medium';
   src: url(../assets/fonts/RobotoMono-Medium.ttf);
 }
+
 @font-face {
   font-family: 'Roboto Mono Semibold';
   src: url(../assets/fonts/RobotoMono-SemiBold.ttf);
 }
+
 @font-face {
   font-family: 'Roboto Mono Bold';
   src: url(../assets/fonts/RobotoMono-Bold.ttf);
 }
+
 @font-face {
   font-family: 'Roboto Mono Light';
   src: url(../assets/fonts/RobotoMono-Light.ttf);
 }
+
 @font-face {
   font-family: 'Roboto Mono Thin';
   src: url(../assets/fonts/RobotoMono-Thin.ttf);
 }
+
 @font-face {
   font-family: 'Open Sans Regular';
   src: url(../assets/fonts/OpenSans-Regular.ttf);
 }
+
 @font-face {
   font-family: 'Open Sans Semibold';
   src: url(../assets/fonts/OpenSans-Semibold.ttf);
 }
+
 @font-face {
   font-family: 'Open Sans Bold';
   src: url(../assets/fonts/OpenSans-Bold.ttf);
 }
+
 @font-face {
   font-family: 'Open Sans Light';
   src: url(../assets/fonts/OpenSans-Light.ttf);
 }
-body {
-  padding: 0;
-  margin: 0;
-  font: 14px "Roboto Mono Regular", "Open Sans Regular", "sans-serif";
-}
-
-header {
-  background-color: #111111;
-  color: #f5f5f5;
-  height: 50px;
-  width: 100%;
-}
-header nav {
-  height: 100%;
-  width: 720px;
-  margin: 0 auto;
-}
-header nav ul {
-  display: flex;
-}
-header nav ul li {
-  flex: 1;
-  list-style: none;
-  text-align: center;
-  padding: 16px;
-}
-
-main {
-  background-color: #333;
-}
-
-.home--banner {
-  background-image: url("../assets/img/black-phanter.png");
-  background-repeat: no-repeat;
-  background-position-y: center;
-  background-size: cover;
-  height: 620px;
-  opacity: 30%;
-}
-
-/*# sourceMappingURL=style.css.map */
