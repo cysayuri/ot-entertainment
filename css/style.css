@@ -75,7 +75,7 @@ header nav ul li a:hover {
 }
 
 .wrapper {
-  background-color: #333;
+  padding: 0 145px;
 }
 .wrapper .initial-presentation {
   background-image: url("../assets/img/black-phanter.png");
@@ -183,6 +183,62 @@ header nav ul li a:hover {
 .home-section--filmes--info {
   background-color: #2b2b2b;
   text-align: right;
+}
+
+.banner {
+  background-image: url(../assets/img/music/banner.jpg);
+  background-size: cover;
+  height: 650px;
+  position: relative;
+}
+.banner__cover {
+  background: #0000004d;
+  height: 100%;
+  position: absolute;
+  width: 100%;
+}
+.banner__title {
+  color: #fff;
+  font: 50px "Roboto Mono Regular", "Open Sans Regular", "sans-serif";
+  margin: 130px 100px;
+  text-align: right;
+}
+
+.content {
+  background: #4e4e4e;
+}
+.content__title {
+  color: #c9c9c9;
+  font: 35px "Roboto Mono Medium", "Open Sans Semibold", "sans-serif";
+  padding: 50px 0;
+  text-align: center;
+}
+
+.glide__track {
+  margin: 0 !important;
+}
+.glide__slide {
+  margin: 0 13px;
+}
+.glide__img {
+  height: 200px;
+  width: 200px;
+}
+.glide__arrow {
+  border: none !important;
+  box-shadow: none !important;
+}
+.glide__arrow--left {
+  left: -60px !important;
+}
+.glide__arrow--right {
+  right: -60px !important;
+}
+.glide__btn {
+  width: 25px;
+}
+.glide__btn--next {
+  transform: rotate(180deg);
 }
 
 /*# sourceMappingURL=style.css.map */
