@@ -96,7 +96,7 @@ header nav ul li a:hover {
   top: 0;
   width: 100%;
 }
-.home-navigation--item {
+.home-navigation__item {
   align-items: center;
   cursor: pointer;
   display: flex;
@@ -107,18 +107,10 @@ header nav ul li a:hover {
   text-transform: uppercase;
   width: 100%;
 }
-.home-navigation--item--icon {
-  fill: #e4e4e4;
-  height: 25px;
-  margin-bottom: 8px;
-}
-.home-navigation--item--title {
-  z-index: 1;
-}
-.home-navigation--item--selected {
+.home-navigation__item--selected {
   color: #E8B02C;
 }
-.home-navigation--item--selected:after {
+.home-navigation__item--selected:after {
   background: #2b2b2b;
   content: "";
   height: 40px;
@@ -127,10 +119,18 @@ header nav ul li a:hover {
   transform: rotate(45deg);
   width: 40px;
 }
-.home-navigation--item--selected .home-navigation--item--icon {
+.home-navigation__item--selected .home-navigation__icon {
   fill: #E8B02C;
 }
-.home-navigation--item + .home-navigation--item {
+.home-navigation__icon {
+  fill: #e4e4e4;
+  height: 25px;
+  margin-bottom: 8px;
+}
+.home-navigation__title {
+  z-index: 1;
+}
+.home-navigation__item + .home-navigation__item {
   border-left: 2px solid #333;
 }
 
@@ -140,17 +140,14 @@ header nav ul li a:hover {
   overflow: hidden;
   width: 100%;
 }
-.home-section--about-us {
-  height: 495px;
-}
-.home-section--img {
+.home-section__img {
   height: 100%;
   width: 80%;
 }
-.home-section--img img {
+.home-section__img img {
   width: 100%;
 }
-.home-section--info {
+.home-section__info {
   background-color: #2b2b2b;
   display: flex;
   flex-direction: column;
@@ -158,46 +155,51 @@ header nav ul li a:hover {
   padding: 20px 40px;
   width: 20%;
 }
-.home-section--info--title {
+.home-section__title {
   color: #e4e4e4;
   font-size: 35px;
   font-weight: bold;
+  letter-spacing: 0.2em;
   text-transform: uppercase;
 }
-.home-section--info--list li {
+.home-section__list li {
   color: #e4e4e4;
   font-size: 20px;
   height: 50px;
 }
-.home-section--info--button {
+.home-section__button {
   background: #E8B02C;
   border: none;
   border-radius: 5px;
   cursor: pointer;
   font-family: 'Roboto Mono Regular';
-  font-size: 17px;
+  font-size: 15px;
   height: 50px;
   width: 160px;
 }
 
-.home-section--filmes {
+.home-section__about-us {
+  height: 495px;
+}
+
+.home-section__filmes {
   height: 540px;
 }
-.home-section--filmes--info {
+.home-section__filmes .filmes__info {
   align-items: flex-end;
   text-align: right;
 }
 
-.home-section--musicas {
+.home-section__musicas {
   height: 550px;
 }
 
-.home-section--contato {
+.home-section__contato {
   height: 400px;
   justify-content: center;
   padding: 40px 0px;
 }
-.home-section--contato--form {
+.home-section__contato .contato__form {
   align-items: center;
   color: #c9c9c9;
   display: flex;
@@ -207,18 +209,21 @@ header nav ul li a:hover {
   position: relative;
   width: 350px;
 }
-.home-section--contato--form--title {
+.home-section__contato .contato__form:last-child {
+  align-items: flex-end;
+}
+.home-section__contato .contato__title {
   font-size: 24px;
 }
-.home-section--contato--form--item {
+.home-section__contato .contato__item {
   display: flex;
   flex-direction: column;
   width: 100%;
 }
-.home-section--contato--form--item-label {
+.home-section__contato .contato__item .item__label {
   margin-bottom: 10px;
 }
-.home-section--contato--form--item-input, .home-section--contato--form--item-textarea {
+.home-section__contato .contato__item .item__input, .home-section__contato .contato__item .item__textarea {
   background: transparent;
   border: 1px solid #c9c9c9;
   border-radius: 5px;
@@ -226,26 +231,39 @@ header nav ul li a:hover {
   font-family: "Roboto Mono Regular";
   padding-left: 10px;
 }
-.home-section--contato--form--item-input:focus, .home-section--contato--form--item-textarea:focus {
+.home-section__contato .contato__item .item__input:focus, .home-section__contato .contato__item .item__textarea:focus {
   border-color: #E8B02C;
   outline: none;
 }
-.home-section--contato--form--item-input {
+.home-section__contato .contato__item .item__input {
   height: 40px;
 }
-.home-section--contato--form--item-textarea {
+.home-section__contato .contato__item .item__textarea {
   height: 100px;
   resize: none;
 }
-.home-section--contato--form--button {
+.home-section__contato .contato__button {
   background: #E8B02C;
   border: none;
   border-radius: 5px;
   cursor: pointer;
   font-family: 'Roboto Mono Regular';
-  font-size: 17px;
+  font-size: 15px;
   height: 40px;
-  width: 160px;
+  width: 145px;
+}
+
+.home-footer {
+  align-items: center;
+  background: #2b2b2b;
+  color: #e4e4e4;
+  display: flex;
+  height: 80px;
+  justify-content: space-around;
+  text-align: center;
+}
+.home-footer__icone {
+  height: 20px;
 }
 
 /*# sourceMappingURL=style.css.map */

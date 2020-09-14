@@ -8,7 +8,7 @@
     top: 0;
     width: 100%;
 
-    &--item {
+    &__item {
         align-items: center;
         cursor: pointer;
         display: flex;
@@ -18,16 +18,6 @@
         text-align: center;
         text-transform: uppercase;
         width: 100%;
-
-        &--icon {
-            fill: $font-color;
-            height: 25px;
-            margin-bottom: 8px;
-        }
-
-        &--title {
-            z-index: 1;
-        }
 
         &--selected{
             color: $primary-color;
@@ -42,13 +32,24 @@
                 width: 40px;
             }
 
-            .home-navigation--item--icon {
+            .home-navigation__icon {
                 fill: $primary-color;
             }
         }
+
     }
 
-    &--item + &--item {
+    &__icon {
+        fill: $font-color;
+        height: 25px;
+        margin-bottom: 8px;
+    }
+
+    &__title {
+        z-index: 1;
+    }
+
+    &__item + &__item {
         border-left: 2px solid #333;
     }
 }
@@ -59,11 +60,7 @@
     overflow: hidden;
     width: 100%;
 
-    &--about-us {
-        height: 495px;
-    }
-
-    &--img {
+    &__img {
         height: 100%;
         width: 80%;
 
@@ -72,102 +69,131 @@
         }
     }
 
-    &--info {
+    &__info {
         background-color: #2b2b2b;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         padding: 20px 40px;
         width: 20%;
+    }
 
-        &--title {
+    &__title {
+        color: $font-color;
+        font-size: 35px;
+        font-weight: bold;
+        letter-spacing: 0.2em;
+        text-transform: uppercase;
+    }
+
+    &__list {
+        li {
             color: $font-color;
-            font-size: 35px;
-            font-weight: bold;
-            text-transform: uppercase;
+            font-size: 20px;
+            height: 50px;
         }
+    }
 
-        &--list {
-            li {
-                color: $font-color;
-                font-size: 20px;
-                height: 50px;
-            }
-        }
-
-        &--button {
-            @include btn-primary(50px);
-        }
+    &__button {
+        @include btn-primary(50px);
     }
 }
 
-.home-section--filmes {
+.home-section__about-us {
+    height: 495px;
+}
+
+.home-section__filmes {
     height: 540px;
 
-    &--info {
-        align-items: flex-end;
-        text-align: right;
+    .filmes{
+        &__info {
+            align-items: flex-end;
+            text-align: right;
+        }
     }
 }
 
-.home-section--musicas {
+.home-section__musicas {
     height: 550px;
 }
 
-.home-section--contato {
+.home-section__contato {
     height: 400px;
     justify-content: center;
     padding: 40px 0px;
 
-    &--form {
-        align-items: center;
-        color: $form-color;
-        display: flex;
-        flex-direction: column;
-        height: 100%;        
-        justify-content: space-around;
-        position: relative;
-        width: 350px;
+    .contato{
+        &__form {
+            align-items: center;
+            color: $form-color;
+            display: flex;
+            flex-direction: column;
+            height: 100%;        
+            justify-content: space-around;
+            position: relative;
+            width: 350px;
+    
+            &:last-child {
+                align-items: flex-end;
+            }
+        }
 
-        &--title {
+        &__title {
             font-size: 24px;
         }
 
-        &--item {
+        &__item {
             display: flex;
             flex-direction: column;
             width: 100%;
 
-            &-label {
-                margin-bottom: 10px;
-            }
+            .item {
+                &__label {
+                    margin-bottom: 10px;
+                }
 
-            &-input, &-textarea {
-                background: transparent;
-                border: 1px solid $form-color;
-                border-radius: 5px;
-                color: #fff;
-                font-family: "Roboto Mono Regular";
-                padding-left: 10px;
+                &__input, &__textarea {
+                    background: transparent;
+                    border: 1px solid $form-color;
+                    border-radius: 5px;
+                    color: #fff;
+                    font-family: "Roboto Mono Regular";
+                    padding-left: 10px;
+    
+                    &:focus {
+                        border-color: $primary-color;
+                        outline: none;
+                    }
+                }
 
-                &:focus {
-                    border-color: $primary-color;
-                    outline: none;
+                &__input {
+                    height: 40px;
+                }
+    
+                &__textarea {
+                    height: 100px;
+                    resize: none;
                 }
             }
-
-            &-input {
-                height: 40px;
-            }
-
-            &-textarea {
-                height: 100px;
-                resize: none;
-            }
         }
 
-        &--button {
-            @include btn-primary(40px);
+        &__button {
+            @include btn-primary(40px, 145px);
         }
+    }
+}
+
+.home-footer {
+    align-items: center;
+    background: #2b2b2b;
+    color: $font-color;
+    display: flex;
+    height: 80px;
+    justify-content: space-around;
+    text-align: center;
+
+    &__icone {
+        height: 20px;
     }
 }

@@ -28,13 +28,13 @@ $M: 960px;
 $L: 1024px;
 $XL: 1130px;
 
-@mixin btn-primary($heigth) {
+@mixin btn-primary($heigth, $width : 160px) {
     background: $primary-color;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     font-family: 'Roboto Mono Regular';
-    font-size: 17px;
+    font-size: 15px;
     height: $heigth;
-    width: 160px;
+    width: $width;
 }
