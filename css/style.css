@@ -137,26 +137,37 @@ header nav ul li a:hover {
 .home-section {
   background-color: #333;
   display: flex;
+  overflow: hidden;
   width: 100%;
 }
 .home-section--about-us {
   height: 495px;
 }
+.home-section--img {
+  height: 100%;
+  width: 80%;
+}
+.home-section--img img {
+  width: 100%;
+}
 .home-section--info {
-  align-items: flex-end;
+  background-color: #2b2b2b;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding-bottom: 20px;
-  padding-right: 40px;
-  padding-top: 20px;
-  width: 30%;
+  padding: 20px 40px;
+  width: 20%;
 }
 .home-section--info--title {
   color: #e4e4e4;
   font-size: 35px;
   font-weight: bold;
   text-transform: uppercase;
+}
+.home-section--info--list li {
+  color: #e4e4e4;
+  font-size: 20px;
+  height: 50px;
 }
 .home-section--info--button {
   background: #E8B02C;
@@ -165,24 +176,19 @@ header nav ul li a:hover {
   cursor: pointer;
   font-size: 20px;
   height: 50px;
-  width: 210px;
+  width: 160px;
 }
 
 .home-section--filmes {
-  background-color: #2b2b2b;
   height: 540px;
 }
-.home-section--filmes--img {
-  height: 100%;
-  width: 70%;
-}
-.home-section--filmes--img img {
-  height: 100%;
-  width: 100%;
-}
 .home-section--filmes--info {
-  background-color: #2b2b2b;
+  align-items: flex-end;
   text-align: right;
+}
+
+.home-section--musicas {
+  height: 550px;
 }
 
 /*# sourceMappingURL=style.css.map */

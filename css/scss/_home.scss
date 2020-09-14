@@ -56,27 +56,43 @@
 .home-section {
     background-color: #333;
     display: flex;
+    overflow: hidden;
     width: 100%;
 
     &--about-us {
         height: 495px;
     }
 
+    &--img {
+        height: 100%;
+        width: 80%;
+
+        img {
+            width: 100%;
+        }
+    }
+
     &--info {
-        align-items: flex-end;
+        background-color: #2b2b2b;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        padding-bottom: 20px;
-        padding-right: 40px;
-        padding-top: 20px;
-        width: 30%;
+        padding: 20px 40px;
+        width: 20%;
 
         &--title {
             color: $font-color;
             font-size: 35px;
             font-weight: bold;
             text-transform: uppercase;
+        }
+
+        &--list {
+            li {
+                color: $font-color;
+                font-size: 20px;
+                height: 50px;
+            }
         }
 
         &--button {
@@ -86,27 +102,20 @@
             cursor: pointer;
             font-size: 20px;
             height: 50px;
-            width: 210px;
+            width: 160px;
         }
     }
 }
 
 .home-section--filmes {
-    background-color: #2b2b2b;
     height: 540px;
 
-    &--img {
-        height: 100%;
-        width: 70%;
-
-        img {
-            height: 100%;
-            width: 100%;
-        }
-    }
-
     &--info {
-        background-color: #2b2b2b;
+        align-items: flex-end;
         text-align: right;
     }
+}
+
+.home-section--musicas {
+    height: 550px;
 }
