@@ -1,3 +1,5 @@
+@charset "utf-8";
+
 body {
     padding: 0;
     margin: 0;
@@ -27,25 +29,90 @@ header {
                 a {
                     color: darken($foreground-color, 30);
                     text-decoration: none;
-
+                    
                     &:hover {
                         color: $foreground-color;
                     }
+                }   
+                
+                .active {
+                    color: $foreground-color;
                 }
+            }
+
+        }
+    }
+}
+
+main {
+    .initial-presentation {
+        background-image: url("../assets/img/recording-studio.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 480px;
+
+        h1 {
+            color: $foreground-color;
+            text-align: right;
+            font-size: 44px;
+            padding: 3em;
+        }
+    }
+
+    .portfolio-presentation {
+        background-color: $light-background-color;
+        height: 450px;
+
+        h2 {
+            font-size: 32px;
+            color: $foreground-color;
+            text-align: center;
+            padding: 1em 0 2em;
+        }
+
+        .box-container {
+            background: #fff;
+            height: 190px;
+            width: 80%;
+            display: flex;
+            margin: 0 auto;
+
+            .box {
+                background-color: red;
+                flex: 1;
+                margin: 0px 10px;
+                height: 190px;
+                width: 200px;
+            }
+        }
+    }
+
+    .portfolio-detail {
+        background-color: $dark-background-color;
+        color: $font-color;
+        display: flex;
+        height: 300px;
+
+        .description, .image {
+            height: inherit;
+            padding: 3em;
+            flex: 1;
+
+            img {
+                width: 350px;
             }
         }
     }
 }
 
-.wrapper {
-    background-color: #333;
+footer {
+    background-color: #2B2B2B;
+    display: flex;
+    height: 100px;
 
-    .initial-presentation {
-        background-image: url('../assets/img/black-phanter.png');
-        background-repeat: no-repeat;
-        background-position-y: center;
-        background-size: cover;
-        height: 620px;
-        opacity: 30%;
+    .email, .address, .social-media {
+        flex: 1;
+        color: #fff;
+        padding: 3em;
     }
 }
