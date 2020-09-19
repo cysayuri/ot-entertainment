@@ -33,7 +33,8 @@
 body {
   padding: 0;
   margin: 0;
-  font: 14px "Roboto Mono Regular", "Open Sans Regular", "sans-serif"; }
+  font: 14px "Roboto Mono Regular", "Open Sans Regular", "sans-serif";
+  box-sizing: border-box; }
 
 header {
   background-color: #111111;
@@ -78,50 +79,77 @@ main .portfolio-presentation h2 {
   text-align: center;
   padding: 1em 0 2em; }
 main .portfolio-presentation .box-container {
-  background-color: transparent;
-  height: 190px;
-  width: 80%;
   display: flex;
-  margin: 0 auto; }
-main .portfolio-presentation .box-container .box {
+  margin: 0 auto;
+  height: 200px;
+  width: 80%;
+  position: relative; }
+main .portfolio-presentation .box-container .black-panther {
+  background-image: url("../assets/img/black-panther.png");
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
   flex: 1;
   margin: 0px 10px;
   height: 200px;
-  width: 200px; }
-main .portfolio-presentation .box-container .box--black-panther {
-  background-image: url("../assets/img/black-panther.png");
-  background-color: blue;
-  width: 100%;
-  height: 100%; }
-main .portfolio-presentation .box-container .box--suicide-squad {
+  justify-content: center; }
+main .portfolio-presentation .box-container .suicide-squad {
   background-image: url("../assets/img/suicide-squad.png");
-  background-color: blue;
-  width: 100%;
-  height: 100%; }
-main .portfolio-presentation .box-container .box--wonder-woman {
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  flex: 1;
+  margin: 0px 10px;
+  height: 200px;
+  justify-content: center; }
+main .portfolio-presentation .box-container .wonder-woman {
   background-image: url("../assets/img/wonder-woman.png");
-  background-color: blue;
-  width: 100%;
-  height: 100%; }
-main .portfolio-presentation .box-container .box--fast-and-furious {
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  flex: 1;
+  margin: 0px 10px;
+  height: 200px;
+  justify-content: center; }
+main .portfolio-presentation .box-container .fast-and-furious {
   background-image: url("../assets/img/fast-and-furious.png");
-  background-color: blue;
-  width: 100%;
-  height: 100%; }
-main .portfolio-presentation .box-container .box--captain-america {
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  flex: 1;
+  margin: 0px 10px;
+  height: 200px;
+  justify-content: center; }
+main .portfolio-presentation .box-container .captain-america {
   background-image: url("../assets/img/captain-america.png");
-  background-color: blue;
-  width: 100%;
-  height: 100%; }
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  flex: 1;
+  margin: 0px 10px;
+  height: 200px;
+  justify-content: center; }
+main .portfolio-presentation .box-container .selected::after {
+  background: #202020;
+  content: "";
+  cursor: none;
+  height: 40px;
+  position: absolute;
+  top: 291px;
+  transform: rotate(45deg);
+  width: 40px; }
 main .portfolio-detail {
   background-color: #202020;
   color: #e4e4e4;
   display: flex;
   height: 300px; }
 main .portfolio-detail .description, main .portfolio-detail .image {
-  height: inherit;
-  padding: 3em;
+  align-items: center;
+  justify-content: center;
+  display: flex;
   flex: 1; }
+main .portfolio-detail .description p, main .portfolio-detail .image p {
+  padding: 2em; }
 main .portfolio-detail .description img, main .portfolio-detail .image img {
   width: 350px; }
 
