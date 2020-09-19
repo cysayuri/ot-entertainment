@@ -78,17 +78,41 @@ main .portfolio-presentation h2 {
   text-align: center;
   padding: 1em 0 2em; }
 main .portfolio-presentation .box-container {
-  background: #fff;
+  background-color: transparent;
   height: 190px;
   width: 80%;
   display: flex;
   margin: 0 auto; }
 main .portfolio-presentation .box-container .box {
-  background-color: red;
   flex: 1;
   margin: 0px 10px;
-  height: 190px;
+  height: 200px;
   width: 200px; }
+main .portfolio-presentation .box-container .box--black-panther {
+  background-image: url("../assets/img/black-panther.png");
+  background-color: blue;
+  width: 100%;
+  height: 100%; }
+main .portfolio-presentation .box-container .box--suicide-squad {
+  background-image: url("../assets/img/suicide-squad.png");
+  background-color: blue;
+  width: 100%;
+  height: 100%; }
+main .portfolio-presentation .box-container .box--wonder-woman {
+  background-image: url("../assets/img/wonder-woman.png");
+  background-color: blue;
+  width: 100%;
+  height: 100%; }
+main .portfolio-presentation .box-container .box--fast-and-furious {
+  background-image: url("../assets/img/fast-and-furious.png");
+  background-color: blue;
+  width: 100%;
+  height: 100%; }
+main .portfolio-presentation .box-container .box--captain-america {
+  background-image: url("../assets/img/captain-america.png");
+  background-color: blue;
+  width: 100%;
+  height: 100%; }
 main .portfolio-detail {
   background-color: #202020;
   color: #e4e4e4;
@@ -100,15 +124,6 @@ main .portfolio-detail .description, main .portfolio-detail .image {
   flex: 1; }
 main .portfolio-detail .description img, main .portfolio-detail .image img {
   width: 350px; }
-
-footer {
-  background-color: #2B2B2B;
-  display: flex;
-  height: 100px; }
-footer .email, footer .address, footer .social-media {
-  flex: 1;
-  color: #fff;
-  padding: 3em; }
 
 .home-navigation {
   background: #2B2B2B;

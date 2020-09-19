@@ -39,3 +39,11 @@ $XL: 1130px;
     height: $heigth;
     width: $width;
 }
+
+$movie-images: (
+    black-panther: url('../assets/img/black-panther.png'),
+    suicide-squad: url('../assets/img/suicide-squad.png'),
+    wonder-woman: url('../assets/img/wonder-woman.png'),
+    fast-and-furious: url('../assets/img/fast-and-furious.png'),
+    captain-america: url('../assets/img/captain-america.png')
+);
