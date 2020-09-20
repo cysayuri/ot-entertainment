@@ -431,14 +431,16 @@ main .portfolio-detail .description img, main .portfolio-detail .image img {
 
 .desc {
   align-items: center;
-  display: flex;
+  display: none;
   justify-content: space-between;
   height: 0;
   opacity: 0;
   margin: 0 17px;
   width: 0;
+  transition: display 1s ease-in-out;
 }
 .desc.is-active {
+  display: flex;
   height: auto;
   opacity: 1;
   width: 100%;
@@ -446,6 +448,10 @@ main .portfolio-detail .description img, main .portfolio-detail .image img {
 .desc__text {
   color: #fff;
   width: 47%;
+}
+.desc__title {
+  font-size: 23px;
+  margin-bottom: 30px;
 }
 .desc__image {
   width: 45%;
