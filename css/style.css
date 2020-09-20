@@ -205,12 +205,18 @@ header nav ul li a:hover {
 }
 
 .content {
+  padding: 50px 145px;
+}
+.content--slider {
   background: #4e4e4e;
+}
+.content--desc {
+  background: #202020;
 }
 .content__title {
   color: #c9c9c9;
   font: 35px "Roboto Mono Medium", "Open Sans Semibold", "sans-serif";
-  padding: 50px 0;
+  padding-bottom: 50px;
   text-align: center;
 }
 
@@ -239,6 +245,31 @@ header nav ul li a:hover {
 }
 .glide__btn--next {
   transform: rotate(180deg);
+}
+
+.desc {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  height: 0;
+  opacity: 0;
+  margin: 0 17px;
+  width: 0;
+}
+.desc.is-active {
+  height: auto;
+  opacity: 1;
+  width: 100%;
+}
+.desc__text {
+  color: #fff;
+  width: 47%;
+}
+.desc__image {
+  width: 45%;
+}
+.desc__image-img {
+  width: 100%;
 }
 
 /*# sourceMappingURL=style.css.map */
