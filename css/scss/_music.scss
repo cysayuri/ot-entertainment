@@ -1,0 +1,105 @@
+.banner {
+    background-image: url(../assets/img/music/banner.jpg);
+    background-size: cover;
+    height: 650px;
+    position: relative;
+
+    &__cover {
+        background: #0000004d;
+        height: 100%;
+        position: absolute;
+        width: 100%;
+    }
+    
+    &__title {
+        color: #fff;
+        font: 50px $font-regular;
+        margin: 130px 100px;
+        text-align: right;
+    }
+}
+
+.content {
+    padding: 50px 145px;
+    
+    &--slider {
+        background: $light-bg;
+    }
+    
+    &--desc {
+        background: $dark-bg;
+    }
+
+    &__title {
+        color: $text-color;
+        font: 35px $font-medium;
+        padding-bottom: 50px;
+        text-align: center;
+    }
+}
+
+
+.glide {
+    &__track {
+        margin: 0 !important;
+    }
+    
+    &__slide {
+        margin: 0 13px;
+    }
+
+    &__img {
+        height: 200px;
+        width: 200px;
+    }
+    
+    &__arrow {
+        border: none !important;
+        box-shadow: none !important;
+
+        &--left {
+            left: -60px !important;
+        }
+
+        &--right {
+            right: -60px !important;
+        }
+    }
+    
+    &__btn {
+        width: 25px;
+
+        &--next {
+            transform: rotate(180deg);
+        }
+    }
+}
+
+.desc {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    height: 0;
+    opacity: 0;
+    margin: 0 17px;
+    width: 0;
+
+    &.is-active {
+        height: auto;
+        opacity: 1;
+        width: 100%;
+    }
+
+    &__text {
+        color: #fff;
+        width: 47%;
+    }
+    
+    &__image {
+        width: 45%;
+
+        &-img {
+            width: 100%;
+        }
+    }
+}

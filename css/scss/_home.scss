@@ -126,7 +126,7 @@
     .contato{
         &__form {
             align-items: center;
-            color: $form-color;
+            color: $text-color;
             display: flex;
             flex-direction: column;
             height: 100%;        
@@ -155,7 +155,7 @@
 
                 &__input, &__textarea {
                     background: transparent;
-                    border: 1px solid $form-color;
+                    border: 1px solid $text-color;
                     border-radius: 5px;
                     color: #fff;
                     font-family: "Roboto Mono Regular";
