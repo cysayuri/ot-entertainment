@@ -58,7 +58,7 @@
             </div>
         </div>
         
-        <div class="content content--desc wrapper">
+        <div class="content content--desc">
             <div class="desc dynamite is-active">
                 <div class="desc__text">
                     <div class="desc__title">
@@ -251,10 +251,28 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/glide.min.js"></script>
     <script src="./portifolio.js"></script>
     <script>
+        let size;
+        const xs = window.matchMedia("(max-width: 480px)")
+        const s = window.matchMedia("(max-width: 630px)")
+        const m = window.matchMedia("(max-width: 758px)")
+        const l = window.matchMedia("(max-width: 960px)")
+        
+        if (xs.matches) {
+            size = 1;
+        } else if (s.matches) {
+            size = 2;
+        } else if (m.matches) {
+            size = 3;
+        } else if (l.matches) {
+            size = 4;
+        } else {
+            size = 5;
+        }
+        
         new Glide('.glide', {
             type: 'carousel',
             startAt: 0,
-            perView: 5
+            perView: size
         }).mount();
     </script>
 </body>

@@ -4,6 +4,18 @@
     height: 650px;
     position: relative;
 
+    @include MQ($M) {
+        height: 500px;
+    }
+
+    @include MQ($M) {
+        height: 450px;
+    }
+    
+    @include MQ(550px) {
+        height: 400px;
+    }
+
     &__cover {
         background: #0000004d;
         height: 100%;
@@ -16,11 +28,39 @@
         font: 50px $font-regular;
         margin: 130px 100px;
         text-align: right;
+        
+        @include MQ($M) {
+            font-size: 45px;
+            margin: 110px 80px;
+        }
+        
+        @include MQ($M) {
+            font-size: 40px;
+            margin: 90px 60px;        
+        }
+        
+        @include MQ(550px) {
+            font-size: 30px;
+            margin: 100px 40px;
+        }
     }
 }
 
 .content {
     padding: 50px 145px;
+    
+    @include MQ(1380px) {
+        padding: 50px 130px;
+    }
+    
+    @include MQ(1320px) {
+        padding: 50px 120px;
+    }
+    
+    @include MQ(1300px) {
+        padding: 50px 100px;
+    }
+    
     
     &--slider {
         background: $light-bg;
@@ -28,6 +68,11 @@
     
     &--desc {
         background: $dark-bg;
+        margin-left: -30px;
+        
+        @include MQ(600px) {
+            padding: 50px 70px;
+        }
     }
 
     &__title {
@@ -38,7 +83,6 @@
     }
 }
 
-
 .glide {
     &__track {
         margin: 0 !important;
@@ -46,11 +90,55 @@
     
     &__slide {
         margin: 0 13px;
+        
+        @include MQ($XS) {
+            margin: 0 35px;
+        }
     }
 
     &__img {
         height: 200px;
         width: 200px;
+        
+        @include MQ(1300px) {
+            height: 180px;
+            width: 180px;
+        }
+        
+        @include MQ(1170px) {
+            height: 150px;
+            width: 150px;
+        }
+        
+        @include MQ($XL) {
+            height: 130px;
+            width: 130px;
+        }
+        
+        @include MQ($M) {
+            height: 150px;
+            width: 150px;
+        }
+        
+        @include MQ(855px) {
+            height: 115px;
+            width: 115px;
+        }
+        
+        @include MQ(630px) {
+            height: 150px;
+            width: 150px;
+        }
+        
+        @include MQ(530px) {
+            height: 130px;
+            width: 130px;
+        }
+        
+        @include MQ($XS) {
+            height: 170px;
+            width: 170px;
+        }
     }
     
     &__arrow {
@@ -68,6 +156,10 @@
     
     &__btn {
         width: 25px;
+
+        @include MQ($XL) {
+            width: 20px;
+        }
 
         &--next {
             transform: rotate(180deg);
@@ -90,20 +182,61 @@
         height: auto;
         opacity: 1;
         width: 100%;
+        
+        @include MQ($M) {
+            display: block;
+            justify-content: center;
+        }
     }
 
     &__text {
         color: #fff;
         width: 47%;
+        
+        @include MQ($M) {
+            margin: 0 auto;
+            width: 90%;
+        }
+        
+        @include MQ($S) {
+            width: 100%;
+        }
+    }
+    
+    &__title {
+        font-size: 25px;
+        margin-bottom: 30px;
+        
+        @include MQ($M) {
+            text-align: center;
+        }
     }
 
-    &__title {
-        font-size: 23px;
-        margin-bottom: 30px;
+    &__p {
+        @include MQ($XL) {
+            font-size: 13px;
+        }
+
+        @include MQ($M) {
+            font-size: 15px;
+        }
+
+        @include MQ($S) {
+            font-size: 14px;
+        }
     }
     
     &__image {
         width: 45%;
+        
+        @include MQ($M) {
+            margin: 50px auto 0;
+            width: 80%;
+        }
+        
+        @include MQ($M) {
+            width: 100%;
+        }
 
         &-img {
             width: 100%;
