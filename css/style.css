@@ -304,6 +304,10 @@ main .portfolio-detail .description img, main .portfolio-detail .image img {
   font-size: 15px;
   height: 50px;
   width: 160px;
+  color: #000;
+  line-height: 50px;
+  text-align: center;
+  text-decoration: none;
 }
 
 .home-section__about-us {

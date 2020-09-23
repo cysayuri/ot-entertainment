@@ -97,6 +97,10 @@
 
     &__button {
         @include btn-primary(50px);
+        color: #000;
+        line-height: 50px;
+        text-align: center;
+        text-decoration: none;
     }
 }
 
