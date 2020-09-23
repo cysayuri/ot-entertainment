@@ -5,20 +5,23 @@
  */
 window.addEventListener('scroll', (event) => {
     let scroll = this.scrollY
-    
+
     const SECTION_HEIGHT_CONTACT = 2040
+    // const SECTION_HEIGHT_CONTACT = 2075
     if ( scroll >= SECTION_HEIGHT_CONTACT ) {
         changeMenuItemSelected('contato')
         return
     }
 
     const SECTION_HEIGHT_MUSICS  = 1490
+    // const SECTION_HEIGHT_MUSICS  = 1524
     if ( scroll >= SECTION_HEIGHT_MUSICS ) {
         changeMenuItemSelected('musicas')
         return
     }
 
     const SECTION_HEIGHT_MOVIES  = 945
+    // const SECTION_HEIGHT_MOVIES  = 980
     if ( scroll >= SECTION_HEIGHT_MOVIES ) {
         changeMenuItemSelected('filmes')
         return
