@@ -21,6 +21,7 @@
 
         &--selected{
             color: $primary-color;
+            transition: all 0.5s;
 
             &:after {
                 background: #2b2b2b;

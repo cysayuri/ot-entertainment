@@ -236,6 +236,7 @@ main .portfolio-detail .description img, main .portfolio-detail .image img {
 }
 .home-navigation__item--selected {
   color: #E8B02C;
+  transition: all 0.5s;
 }
 .home-navigation__item--selected:after {
   background: #2b2b2b;
