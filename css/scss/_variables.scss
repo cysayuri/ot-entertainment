@@ -40,6 +40,12 @@ $XL: 1130px;
     width: $width;
 }
 
+@mixin bg-image ($url) {
+    background-image: url($url);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 $movie-images: (
     black-panther: url('../assets/img/black-panther.png'),
     suicide-squad: url('../assets/img/suicide-squad.png'),
@@ -47,3 +53,5 @@ $movie-images: (
     fast-and-furious: url('../assets/img/fast-and-furious.png'),
     captain-america: url('../assets/img/captain-america.png')
 );
+
+$header-height : 51px;

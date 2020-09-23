@@ -10,6 +10,8 @@ body {
 header {
     background-color: $black;
     color: $foreground-color;
+    position: fixed;
+    top: 0;
     width: 100%;
     
     nav {
