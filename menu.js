@@ -6,19 +6,19 @@
 window.addEventListener('scroll', (event) => {
     let scroll = this.scrollY
     
-    const SECTION_HEIGHT_CONTACT = 2185
+    const SECTION_HEIGHT_CONTACT = 2040
     if ( scroll >= SECTION_HEIGHT_CONTACT ) {
         changeMenuItemSelected('contato')
         return
     }
 
-    const SECTION_HEIGHT_MUSICS  = 1637
+    const SECTION_HEIGHT_MUSICS  = 1490
     if ( scroll >= SECTION_HEIGHT_MUSICS ) {
         changeMenuItemSelected('musicas')
         return
     }
 
-    const SECTION_HEIGHT_MOVIES  = 1094
+    const SECTION_HEIGHT_MOVIES  = 945
     if ( scroll >= SECTION_HEIGHT_MOVIES ) {
         changeMenuItemSelected('filmes')
         return
@@ -57,7 +57,7 @@ menuSections.forEach((item) => {
         let top = document.querySelector('.home-section[data-section="'+section+'"]')
 
         window.scrollTo({
-            top: (top.offsetTop - 120),
+            top: (top.offsetTop - 125),
             behavior: 'smooth'
         })
     })
