@@ -5,7 +5,7 @@
  */
 window.addEventListener('scroll', (event) => {
     let scroll = this.scrollY
-
+    
     const SECTION_HEIGHT_CONTACT = 2185
     if ( scroll >= SECTION_HEIGHT_CONTACT ) {
         changeMenuItemSelected('contato')
@@ -57,7 +57,7 @@ menuSections.forEach((item) => {
         let top = document.querySelector('.home-section[data-section="'+section+'"]')
 
         window.scrollTo({
-            top: (top.offsetTop - 70),
+            top: (top.offsetTop - 120),
             behavior: 'smooth'
         })
     })
