@@ -514,6 +514,9 @@ main .portfolio-detail .description img, main .portfolio-detail .image img {
   text-align: center;
 }
 
+.glide {
+  cursor: pointer;
+}
 .glide__track {
   margin: 0 !important;
 }
