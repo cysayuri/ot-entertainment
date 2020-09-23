@@ -1,8 +1,15 @@
 .banner {
-    background-image: url(../assets/img/music/banner.jpg);
     background-size: cover;
     height: 650px;
     position: relative;
+    
+    &--music {
+        background-image: url(../assets/img/music/banner.jpg);
+    }
+    
+    &--movie {
+        background-image: url(../assets/img/movies/banner.jpg);
+    }
 
     @include MQ($M) {
         height: 500px;
